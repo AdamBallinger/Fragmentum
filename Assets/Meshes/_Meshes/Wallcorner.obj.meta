@@ -1,0 +1,157 @@
+fileFormatVersion: 2
+guid: 83de38b052d0fa44b9e9a8f84111d5bb
+timeCreated: 1488213068
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: pPlane232
+    100002: //RootNode
+    100004: group_pPlane79
+    100006: pPlane233
+    100008: pPlane73_group
+    100010: pPlane80
+    100012: pPlane81
+    100014: pPlane82
+    100016: pPlane83
+    100018: pPlane84
+    100020: pPlane86
+    100022: pPlane87
+    100024: pPlane88
+    100026: pPlane89
+    100028: pPlane90
+    100030: pPlane73
+    100032: Wallcorner:pPlane73_group1
+    400000: pPlane232
+    400002: //RootNode
+    400004: group_pPlane79
+    400006: pPlane233
+    400008: pPlane73_group
+    400010: pPlane80
+    400012: pPlane81
+    400014: pPlane82
+    400016: pPlane83
+    400018: pPlane84
+    400020: pPlane86
+    400022: pPlane87
+    400024: pPlane88
+    400026: pPlane89
+    400028: pPlane90
+    400030: pPlane73
+    400032: Wallcorner:pPlane73_group1
+    2300000: pPlane232
+    2300002: group_pPlane79
+    2300004: pPlane233
+    2300006: pPlane73_group
+    2300008: pPlane80
+    2300010: pPlane81
+    2300012: pPlane82
+    2300014: pPlane83
+    2300016: pPlane84
+    2300018: pPlane86
+    2300020: pPlane87
+    2300022: pPlane88
+    2300024: pPlane89
+    2300026: pPlane90
+    2300028: pPlane73
+    2300030: Wallcorner:pPlane73_group1
+    3300000: pPlane232
+    3300002: group_pPlane79
+    3300004: pPlane233
+    3300006: pPlane73_group
+    3300008: pPlane80
+    3300010: pPlane81
+    3300012: pPlane82
+    3300014: pPlane83
+    3300016: pPlane84
+    3300018: pPlane86
+    3300020: pPlane87
+    3300022: pPlane88
+    3300024: pPlane89
+    3300026: pPlane90
+    3300028: pPlane73
+    3300030: Wallcorner:pPlane73_group1
+    4300000: pPlane232
+    4300002: group_pPlane79
+    4300004: pPlane233
+    4300006: pPlane73_group
+    4300008: pPlane80
+    4300010: pPlane81
+    4300012: pPlane82
+    4300014: pPlane83
+    4300016: pPlane84
+    4300018: pPlane86
+    4300020: pPlane87
+    4300022: pPlane88
+    4300024: pPlane89
+    4300026: pPlane90
+    4300028: pPlane73
+    4300030: Wallcorner:pPlane73_group1
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Enemy
+  - Bat Boss
+  - Bat Minion
+  - Bonfire
+  - PauseMenuMaster
+  - OptionsMaster
+  - Torch
+  - EnemyHeadTrigger
+  - EnemyDashCollider
+  - EnemyProjectile
+  - PlantBoss
+  - StandardizedCamera
+  - Bat Bomb Projectile
+  - Bat Flamethrower
+  - PlantEnemy
+  - PlayerCameraTrigger
+  - PlayerMain
+  - Checkpoint
+  - MushroomEnemy
+  - RockEnemy
+  - RootsTrigger
+  - IgnoreProjectile
+  - PhobiaTrigger
+  - Gem Pickup
+  - Mushroom Pickup
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - BatBoss
+  - Player
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

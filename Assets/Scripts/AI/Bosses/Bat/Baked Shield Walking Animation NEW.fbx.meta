@@ -1,0 +1,354 @@
+fileFormatVersion: 2
+guid: 75824b9034000a348ac6b05f70fa2de8
+timeCreated: 1493039541
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: _UNKNOWN_REF_NODE_fosterParent1
+    100002: //RootNode
+    100004: Eyes
+    100006: Geo
+    100008: Hair1
+    100010: Head_Joint
+    100012: joint2
+    100014: joint2 1
+    100016: joint4
+    100018: L_Ankle
+    100020: L_Ball_Joint
+    100022: L_Bicep_Roll_Joint
+    100024: L_Clavicle
+    100026: L_Elbow
+    100028: L_Fingers_Joint
+    100030: L_Fingers_Joint2
+    100032: L_Fingers_Joint3
+    100034: L_Forearm_Roll_Joint
+    100036: L_Hip
+    100038: L_Knee
+    100040: L_Shoulder
+    100042: L_Thigh_Roll_Joint
+    100044: L_Thumb_Joint
+    100046: L_Thumb_Joint2
+    100048: L_Thumb_Joint3
+    100050: L_Toe_Joint
+    100052: L_Wrist
+    100054: Neck_Joint
+    100056: New_Shield_Pose:Mesh
+    100058: Pelvis_Joint
+    100060: R_Ankle
+    100062: R_Ball_Joint
+    100064: R_Bicep_Roll_Joint
+    100066: R_Clavicle
+    100068: R_Elbow
+    100070: R_Fingers_Joint
+    100072: R_Fingers_Joint2
+    100074: R_Fingers_Joint3
+    100076: R_Forearm_Roll_Joint
+    100078: R_Hip
+    100080: R_Knee
+    100082: R_Shoulder
+    100084: R_Thigh_Roll_Joint
+    100086: R_Thumb_Joint
+    100088: R_Thumb_Joint2
+    100090: R_Thumb_Joint3
+    100092: R_Toe_Joint
+    100094: R_Wrist
+    100096: Scarf1
+    100098: Skin_and_Body1
+    100100: Spine_Joint1
+    100102: Spine_Joint2
+    100104: Top_Spine_Joint
+    100106: Visor_Chin1
+    100108: Visor_Face1
+    100110: Visor_Joint1
+    400000: _UNKNOWN_REF_NODE_fosterParent1
+    400002: //RootNode
+    400004: Eyes
+    400006: Geo
+    400008: Hair1
+    400010: Head_Joint
+    400012: joint2
+    400014: joint2 1
+    400016: joint4
+    400018: L_Ankle
+    400020: L_Ball_Joint
+    400022: L_Bicep_Roll_Joint
+    400024: L_Clavicle
+    400026: L_Elbow
+    400028: L_Fingers_Joint
+    400030: L_Fingers_Joint2
+    400032: L_Fingers_Joint3
+    400034: L_Forearm_Roll_Joint
+    400036: L_Hip
+    400038: L_Knee
+    400040: L_Shoulder
+    400042: L_Thigh_Roll_Joint
+    400044: L_Thumb_Joint
+    400046: L_Thumb_Joint2
+    400048: L_Thumb_Joint3
+    400050: L_Toe_Joint
+    400052: L_Wrist
+    400054: Neck_Joint
+    400056: New_Shield_Pose:Mesh
+    400058: Pelvis_Joint
+    400060: R_Ankle
+    400062: R_Ball_Joint
+    400064: R_Bicep_Roll_Joint
+    400066: R_Clavicle
+    400068: R_Elbow
+    400070: R_Fingers_Joint
+    400072: R_Fingers_Joint2
+    400074: R_Fingers_Joint3
+    400076: R_Forearm_Roll_Joint
+    400078: R_Hip
+    400080: R_Knee
+    400082: R_Shoulder
+    400084: R_Thigh_Roll_Joint
+    400086: R_Thumb_Joint
+    400088: R_Thumb_Joint2
+    400090: R_Thumb_Joint3
+    400092: R_Toe_Joint
+    400094: R_Wrist
+    400096: Scarf1
+    400098: Skin_and_Body1
+    400100: Spine_Joint1
+    400102: Spine_Joint2
+    400104: Top_Spine_Joint
+    400106: Visor_Chin1
+    400108: Visor_Face1
+    400110: Visor_Joint1
+    4300000: Eyes
+    4300002: Hair1
+    4300004: Scarf1
+    4300006: Skin_and_Body1
+    4300008: Visor_Chin1
+    4300010: Visor_Face1
+    4300012: New_Shield_Pose:Mesh
+    7400000: BlockWalking
+    9500000: //RootNode
+    13700000: Eyes
+    13700002: Hair1
+    13700004: New_Shield_Pose:Mesh
+    13700006: Scarf1
+    13700008: Skin_and_Body1
+    13700010: Visor_Chin1
+    13700012: Visor_Face1
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: BlockWalking
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: _UNKNOWN_REF_NODE_fosterParent1
+        weight: 1
+      - path: _UNKNOWN_REF_NODE_fosterParent1/Geo
+        weight: 1
+      - path: _UNKNOWN_REF_NODE_fosterParent1/Geo/Eyes
+        weight: 1
+      - path: _UNKNOWN_REF_NODE_fosterParent1/Geo/Hair1
+        weight: 1
+      - path: _UNKNOWN_REF_NODE_fosterParent1/Geo/Scarf1
+        weight: 1
+      - path: _UNKNOWN_REF_NODE_fosterParent1/Geo/Skin_and_Body1
+        weight: 1
+      - path: _UNKNOWN_REF_NODE_fosterParent1/Geo/Visor_Chin1
+        weight: 1
+      - path: _UNKNOWN_REF_NODE_fosterParent1/Geo/Visor_Face1
+        weight: 1
+      - path: New_Shield_Pose:Mesh
+        weight: 1
+      - path: Pelvis_Joint
+        weight: 1
+      - path: Pelvis_Joint/L_Hip
+        weight: 1
+      - path: Pelvis_Joint/L_Hip/L_Thigh_Roll_Joint
+        weight: 1
+      - path: Pelvis_Joint/L_Hip/L_Thigh_Roll_Joint/L_Knee
+        weight: 1
+      - path: Pelvis_Joint/L_Hip/L_Thigh_Roll_Joint/L_Knee/L_Ankle
+        weight: 1
+      - path: Pelvis_Joint/L_Hip/L_Thigh_Roll_Joint/L_Knee/L_Ankle/L_Ball_Joint
+        weight: 1
+      - path: Pelvis_Joint/L_Hip/L_Thigh_Roll_Joint/L_Knee/L_Ankle/L_Ball_Joint/L_Toe_Joint
+        weight: 1
+      - path: Pelvis_Joint/R_Hip
+        weight: 1
+      - path: Pelvis_Joint/R_Hip/R_Thigh_Roll_Joint
+        weight: 1
+      - path: Pelvis_Joint/R_Hip/R_Thigh_Roll_Joint/R_Knee
+        weight: 1
+      - path: Pelvis_Joint/R_Hip/R_Thigh_Roll_Joint/R_Knee/R_Ankle
+        weight: 1
+      - path: Pelvis_Joint/R_Hip/R_Thigh_Roll_Joint/R_Knee/R_Ankle/R_Ball_Joint
+        weight: 1
+      - path: Pelvis_Joint/R_Hip/R_Thigh_Roll_Joint/R_Knee/R_Ankle/R_Ball_Joint/R_Toe_Joint
+        weight: 1
+      - path: Pelvis_Joint/Spine_Joint1
+        weight: 1
+      - path: Pelvis_Joint/Spine_Joint1/Spine_Joint2
+        weight: 1
+      - path: Pelvis_Joint/Spine_Joint1/Spine_Joint2/Top_Spine_Joint
+        weight: 1
+      - path: Pelvis_Joint/Spine_Joint1/Spine_Joint2/Top_Spine_Joint/L_Clavicle
+        weight: 1
+      - path: Pelvis_Joint/Spine_Joint1/Spine_Joint2/Top_Spine_Joint/L_Clavicle/L_Shoulder
+        weight: 1
+      - path: Pelvis_Joint/Spine_Joint1/Spine_Joint2/Top_Spine_Joint/L_Clavicle/L_Shoulder/joint2
+        weight: 1
+      - path: Pelvis_Joint/Spine_Joint1/Spine_Joint2/Top_Spine_Joint/L_Clavicle/L_Shoulder/joint2/L_Bicep_Roll_Joint
+        weight: 1
+      - path: Pelvis_Joint/Spine_Joint1/Spine_Joint2/Top_Spine_Joint/L_Clavicle/L_Shoulder/joint2/L_Bicep_Roll_Joint/L_Elbow
+        weight: 1
+      - path: Pelvis_Joint/Spine_Joint1/Spine_Joint2/Top_Spine_Joint/L_Clavicle/L_Shoulder/joint2/L_Bicep_Roll_Joint/L_Elbow/L_Forearm_Roll_Joint
+        weight: 1
+      - path: Pelvis_Joint/Spine_Joint1/Spine_Joint2/Top_Spine_Joint/L_Clavicle/L_Shoulder/joint2/L_Bicep_Roll_Joint/L_Elbow/L_Forearm_Roll_Joint/L_Wrist
+        weight: 1
+      - path: Pelvis_Joint/Spine_Joint1/Spine_Joint2/Top_Spine_Joint/L_Clavicle/L_Shoulder/joint2/L_Bicep_Roll_Joint/L_Elbow/L_Forearm_Roll_Joint/L_Wrist/L_Fingers_Joint
+        weight: 1
+      - path: Pelvis_Joint/Spine_Joint1/Spine_Joint2/Top_Spine_Joint/L_Clavicle/L_Shoulder/joint2/L_Bicep_Roll_Joint/L_Elbow/L_Forearm_Roll_Joint/L_Wrist/L_Fingers_Joint/L_Fingers_Joint2
+        weight: 1
+      - path: Pelvis_Joint/Spine_Joint1/Spine_Joint2/Top_Spine_Joint/L_Clavicle/L_Shoulder/joint2/L_Bicep_Roll_Joint/L_Elbow/L_Forearm_Roll_Joint/L_Wrist/L_Fingers_Joint/L_Fingers_Joint2/L_Fingers_Joint3
+        weight: 1
+      - path: Pelvis_Joint/Spine_Joint1/Spine_Joint2/Top_Spine_Joint/L_Clavicle/L_Shoulder/joint2/L_Bicep_Roll_Joint/L_Elbow/L_Forearm_Roll_Joint/L_Wrist/L_Thumb_Joint
+        weight: 1
+      - path: Pelvis_Joint/Spine_Joint1/Spine_Joint2/Top_Spine_Joint/L_Clavicle/L_Shoulder/joint2/L_Bicep_Roll_Joint/L_Elbow/L_Forearm_Roll_Joint/L_Wrist/L_Thumb_Joint/L_Thumb_Joint2
+        weight: 1
+      - path: Pelvis_Joint/Spine_Joint1/Spine_Joint2/Top_Spine_Joint/L_Clavicle/L_Shoulder/joint2/L_Bicep_Roll_Joint/L_Elbow/L_Forearm_Roll_Joint/L_Wrist/L_Thumb_Joint/L_Thumb_Joint2/L_Thumb_Joint3
+        weight: 1
+      - path: Pelvis_Joint/Spine_Joint1/Spine_Joint2/Top_Spine_Joint/Neck_Joint
+        weight: 1
+      - path: Pelvis_Joint/Spine_Joint1/Spine_Joint2/Top_Spine_Joint/Neck_Joint/Head_Joint
+        weight: 1
+      - path: Pelvis_Joint/Spine_Joint1/Spine_Joint2/Top_Spine_Joint/Neck_Joint/Head_Joint/Visor_Joint1
+        weight: 1
+      - path: Pelvis_Joint/Spine_Joint1/Spine_Joint2/Top_Spine_Joint/Neck_Joint/Head_Joint/Visor_Joint1/joint4
+        weight: 1
+      - path: Pelvis_Joint/Spine_Joint1/Spine_Joint2/Top_Spine_Joint/R_Clavicle
+        weight: 1
+      - path: Pelvis_Joint/Spine_Joint1/Spine_Joint2/Top_Spine_Joint/R_Clavicle/R_Shoulder
+        weight: 1
+      - path: Pelvis_Joint/Spine_Joint1/Spine_Joint2/Top_Spine_Joint/R_Clavicle/R_Shoulder/joint2
+          1
+        weight: 1
+      - path: Pelvis_Joint/Spine_Joint1/Spine_Joint2/Top_Spine_Joint/R_Clavicle/R_Shoulder/joint2
+          1/R_Bicep_Roll_Joint
+        weight: 1
+      - path: Pelvis_Joint/Spine_Joint1/Spine_Joint2/Top_Spine_Joint/R_Clavicle/R_Shoulder/joint2
+          1/R_Bicep_Roll_Joint/R_Elbow
+        weight: 1
+      - path: Pelvis_Joint/Spine_Joint1/Spine_Joint2/Top_Spine_Joint/R_Clavicle/R_Shoulder/joint2
+          1/R_Bicep_Roll_Joint/R_Elbow/R_Forearm_Roll_Joint
+        weight: 1
+      - path: Pelvis_Joint/Spine_Joint1/Spine_Joint2/Top_Spine_Joint/R_Clavicle/R_Shoulder/joint2
+          1/R_Bicep_Roll_Joint/R_Elbow/R_Forearm_Roll_Joint/R_Wrist
+        weight: 1
+      - path: Pelvis_Joint/Spine_Joint1/Spine_Joint2/Top_Spine_Joint/R_Clavicle/R_Shoulder/joint2
+          1/R_Bicep_Roll_Joint/R_Elbow/R_Forearm_Roll_Joint/R_Wrist/R_Fingers_Joint
+        weight: 1
+      - path: Pelvis_Joint/Spine_Joint1/Spine_Joint2/Top_Spine_Joint/R_Clavicle/R_Shoulder/joint2
+          1/R_Bicep_Roll_Joint/R_Elbow/R_Forearm_Roll_Joint/R_Wrist/R_Fingers_Joint/R_Fingers_Joint2
+        weight: 1
+      - path: Pelvis_Joint/Spine_Joint1/Spine_Joint2/Top_Spine_Joint/R_Clavicle/R_Shoulder/joint2
+          1/R_Bicep_Roll_Joint/R_Elbow/R_Forearm_Roll_Joint/R_Wrist/R_Fingers_Joint/R_Fingers_Joint2/R_Fingers_Joint3
+        weight: 1
+      - path: Pelvis_Joint/Spine_Joint1/Spine_Joint2/Top_Spine_Joint/R_Clavicle/R_Shoulder/joint2
+          1/R_Bicep_Roll_Joint/R_Elbow/R_Forearm_Roll_Joint/R_Wrist/R_Thumb_Joint
+        weight: 1
+      - path: Pelvis_Joint/Spine_Joint1/Spine_Joint2/Top_Spine_Joint/R_Clavicle/R_Shoulder/joint2
+          1/R_Bicep_Roll_Joint/R_Elbow/R_Forearm_Roll_Joint/R_Wrist/R_Thumb_Joint/R_Thumb_Joint2
+        weight: 1
+      - path: Pelvis_Joint/Spine_Joint1/Spine_Joint2/Top_Spine_Joint/R_Clavicle/R_Shoulder/joint2
+          1/R_Bicep_Roll_Joint/R_Elbow/R_Forearm_Roll_Joint/R_Wrist/R_Thumb_Joint/R_Thumb_Joint2/R_Thumb_Joint3
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

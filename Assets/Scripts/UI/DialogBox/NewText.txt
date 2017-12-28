@@ -1,0 +1,5 @@
+Hello
+Press A or SPACE to Jump
+Press X or LSHIFT to dash
+Press B or  to block
+

@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: a10098384cf604640956eda1faa46953
+timeCreated: 1489421083
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - seedProjectilePrefab: {fileID: 1087273493381810, guid: 50d5e976a8da7f744bd2bc615fa250d1,
+      type: 2}
+  - petalProjectilePrefab: {instanceID: 0}
+  - plantModelParent: {instanceID: 0}
+  - shieldObject: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 8895dc51a89738c4ab12a4ef8b9a0e96
+timeCreated: 1490049674
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: UnderWorld
+  fontNames:
+  - UnderWorld
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
