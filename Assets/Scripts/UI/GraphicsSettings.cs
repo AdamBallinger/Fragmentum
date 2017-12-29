@@ -1,6 +1,7 @@
 using Assets.Shaders.FXAA.Scripts;
 using Assets.Standard_Assets.Effects.ImageEffects.Scripts;
 using UnityEngine;
+using UnityEngine.PostProcessing;
 using UnityStandardAssets.ImageEffects;
 
 namespace Assets.Scripts.UI
@@ -16,12 +17,15 @@ namespace Assets.Scripts.UI
 
         private GlobalUIController uiController;
 
+        private PostProcessingProfile postFX;
+
         private int currentControllerSelection;
         private bool dpadDown ;
 
         private void Start()
         {
             uiController = FindObjectOfType<GlobalUIController>();
+            postFX = GetStandardizedCamera()?.GetComponent<PostProcessingBehaviour>().profile;
         }
 
         public void OnAntiAliasToggle()
@@ -53,18 +57,17 @@ namespace Assets.Scripts.UI
         private GameObject GetStandardizedCamera()
         {
             var cameraRootObj = GameObject.FindGameObjectWithTag("StandardizedCamera");
-            return cameraRootObj == null ? null : cameraRootObj.transform.Find("Camera").gameObject;
+            return cameraRootObj?.transform.Find("Camera").gameObject;
         }
 
         private void Update()
         {
-            if(GetStandardizedCamera() != null)
+            if(postFX != null)
             {
                 // Update camera post fx settings
-                GetStandardizedCamera().GetComponent<FXAA>().enabled = antiAliasing;
-                //GetStandardizedCamera().GetComponent<Antialiasing>().enabled = antiAliasing;
-                GetStandardizedCamera().GetComponent<ScreenSpaceAmbientOcclusion>().enabled = ambientOcclusion;
-                GetStandardizedCamera().GetComponent<Bloom>().enabled = bloom;
+                postFX.antialiasing.enabled = antiAliasing;
+                postFX.ambientOcclusion.enabled = ambientOcclusion;
+                postFX.bloom.enabled = bloom;
                 QualitySettings.vSyncCount = vSync ? 1 : 0;
             }         
 

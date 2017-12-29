@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.6072803, g: 0.57514757, b: 0.48913813, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!157 &4
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -1803,16 +1803,16 @@ Transform:
   - {fileID: 1975199464}
   - {fileID: 2097328394}
   - {fileID: 1828834332}
+  - {fileID: 1151427138}
   - {fileID: 347466040}
   - {fileID: 2092863976}
   - {fileID: 1802998583}
+  - {fileID: 267543941}
   - {fileID: 103390078}
   - {fileID: 1899123167}
   - {fileID: 593824120}
   - {fileID: 967476006}
   - {fileID: 305717400}
-  - {fileID: 1151427138}
-  - {fileID: 267543941}
   - {fileID: 323437986}
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -3405,7 +3405,7 @@ Transform:
   - {fileID: 1032790961}
   - {fileID: 814182010}
   m_Father: {fileID: 163288682}
-  m_RootOrder: 247
+  m_RootOrder: 242
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &278048955
 Prefab:
@@ -6264,29 +6264,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 405050, guid: fe2dd098ab7ab9a4aa323e6f6627f74e, type: 2}
   m_PrefabInternal: {fileID: 479263831}
---- !u!1 &496579989 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1614997219622876, guid: 22416b7181286a24c845c175983072b5,
-    type: 2}
-  m_PrefabInternal: {fileID: 1894378029}
---- !u!114 &496580002
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 496579989}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76b5ec6153a1d55438228df10fe66844, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  distanceFog: 1
-  useRadialDistance: 1
-  heightFog: 0
-  height: 80
-  heightDensity: 2.5
-  startDistance: 30
-  fogShader: {fileID: 4800000, guid: 70d8568987ac0499f952b54c7c13e265, type: 3}
 --- !u!1001 &497239040
 Prefab:
   m_ObjectHideFlags: 0
@@ -14717,7 +14694,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 163288682}
-  m_RootOrder: 246
+  m_RootOrder: 238
   m_LocalEulerAnglesHint: {x: 0, y: 84.43201, z: 0}
 --- !u!1 &1155179348
 GameObject:

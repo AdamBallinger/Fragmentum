@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.PostProcessing;
 using UnityStandardAssets.ImageEffects;
 
 namespace Assets.Scripts.Character
@@ -18,7 +19,9 @@ namespace Assets.Scripts.Character
 
         private const float defaultExposure = 0.2f;
 
-        private void Start ()
+        private PostProcessingProfile postFX;
+
+        private void Start()
         {
             if (mainCamera == null)
             {
@@ -26,7 +29,7 @@ namespace Assets.Scripts.Character
             }
         }
 
-        private void Update ()
+        private void Update()
         {
             if (exposed)
             {
@@ -41,8 +44,15 @@ namespace Assets.Scripts.Character
 
             exposure = Mathf.Min(10, Mathf.Max(0, exposure));
 
-            var effect = mainCamera.GetComponent<VignetteAndChromaticAberration>();
-            effect.intensity = defaultExposure + exposure;
+            if (postFX == null)
+            {
+                postFX = mainCamera.GetComponent<PostProcessingBehaviour>().profile;
+                return;
+            }
+
+            var settings = postFX.vignette.settings;
+            settings.intensity = defaultExposure + exposure;
+            postFX.vignette.settings = settings;
         }
     }
 }
