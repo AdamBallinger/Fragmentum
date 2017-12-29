@@ -106,6 +106,10 @@ namespace Assets.Scripts.UI.MainMenu
                 IntroPlaying = true;
                 StartCoroutine(Intro());
             }
+            else
+            {
+                pressToStartText.gameObject.SetActive(false);
+            }
         }
 
         private void OnDestroy()
