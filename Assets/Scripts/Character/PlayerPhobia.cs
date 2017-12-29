@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.PostProcessing;
-using UnityStandardAssets.ImageEffects;
 
 namespace Assets.Scripts.Character
 {

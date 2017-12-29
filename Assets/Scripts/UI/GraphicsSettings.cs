@@ -1,8 +1,5 @@
-using Assets.Shaders.FXAA.Scripts;
-using Assets.Standard_Assets.Effects.ImageEffects.Scripts;
 using UnityEngine;
 using UnityEngine.PostProcessing;
-using UnityStandardAssets.ImageEffects;
 
 namespace Assets.Scripts.UI
 {
