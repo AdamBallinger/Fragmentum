@@ -76,7 +76,7 @@ Material:
     - _SpecularHighlights: 1
     - _Speed: 5
     - _SrcBlend: 1
-    - _Strength: 0.5
+    - _Strength: 4.494556
     - _Tile: 4
     - _UVSec: 0
     - _ZWrite: 1
