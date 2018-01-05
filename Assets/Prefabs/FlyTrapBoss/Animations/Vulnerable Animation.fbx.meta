@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 03a8ad9d2274418499375ba518f8a86f
+guid: 032874d2fa377334dad053d12aec6a6f
 timeCreated: 1490108671
 licenseType: Pro
 ModelImporter:
@@ -47,7 +47,7 @@ ModelImporter:
     400038: Venus_Fly_Trap_Low_Poly:Mesh
     4300000: Venus_Fly_Trap_GEO
     4300002: polySurface2
-    7400000: Roar
+    7400000: Vulnerable
     9500000: //RootNode
     13700000: polySurface2
     13700002: Venus_Fly_Trap_GEO
@@ -89,18 +89,18 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Roar
+      name: Vulnerable
       takeName: Take 001
-      firstFrame: 1
-      lastFrame: 48
+      firstFrame: 8
+      lastFrame: 13
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
-      cycleOffset: 0
+      cycleOffset: 10
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 1
-      loopBlend: 0
+      loopBlend: 1
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0

@@ -161,97 +161,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
-  directorPoints:
-  - objectPosition: {x: -10.35, y: 0.53, z: -22.53}
-    objectRotation: {x: -0, y: 0, z: 0}
-    moveCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    transitionTime: 0
-    enableCustomCurve: 0
-    haltOnReach: 0
-    delay: 0
-    enableCallback: 0
-    onReached:
-      m_PersistentCalls:
-        m_Calls: []
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - objectPosition: {x: -10.35, y: 0.53, z: -15.84}
-    objectRotation: {x: -0, y: 0, z: 0}
-    moveCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    transitionTime: 2
-    enableCustomCurve: 0
-    haltOnReach: 0
-    delay: 0
-    enableCallback: 0
-    onReached:
-      m_PersistentCalls:
-        m_Calls: []
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - objectPosition: {x: -4.5100007, y: 0.53, z: -15.840001}
-    objectRotation: {x: -0, y: 319.67694, z: 0}
-    moveCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    transitionTime: 2
-    enableCustomCurve: 0
-    haltOnReach: 0
-    delay: 0
-    enableCallback: 0
-    onReached:
-      m_PersistentCalls:
-        m_Calls: []
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - objectPosition: {x: -4.509997, y: 4.39, z: -15.839999}
-    objectRotation: {x: -0, y: 218.00938, z: 0}
-    moveCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    transitionTime: 2
-    enableCustomCurve: 0
-    haltOnReach: 0
-    delay: 0
-    enableCallback: 0
-    onReached:
-      m_PersistentCalls:
-        m_Calls: []
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - objectPosition: {x: -11.24, y: 4.39, z: -15.84}
-    objectRotation: {x: -0, y: 0, z: 0}
-    moveCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    transitionTime: 2
-    enableCustomCurve: 0
-    haltOnReach: 0
-    delay: 0
-    enableCallback: 0
-    onReached:
-      m_PersistentCalls:
-        m_Calls: []
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
+  directorPoints: []
   onStart:
     m_PersistentCalls:
       m_Calls: []
@@ -274,7 +184,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 51261894}
   m_LocalRotation: {x: -0, y: -0.928967, z: -0, w: -0.37016255}
-  m_LocalPosition: {x: -5.9611516, y: 4.39, z: -17.1872}
+  m_LocalPosition: {x: -5.9611516, y: 4.98, z: -17.23}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 604653250}
@@ -15825,7 +15735,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4761180634368878, guid: ac51997af63624a49a4b9ee923d6a884, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 23.16678
+      value: 26.52
       objectReference: {fileID: 0}
     - target: {fileID: 4761180634368878, guid: ac51997af63624a49a4b9ee923d6a884, type: 2}
       propertyPath: m_LocalPosition.z
@@ -15857,11 +15767,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4761180634368878, guid: ac51997af63624a49a4b9ee923d6a884, type: 2}
       propertyPath: m_LocalScale.x
-      value: 9.664284
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4761180634368878, guid: ac51997af63624a49a4b9ee923d6a884, type: 2}
       propertyPath: m_LocalScale.z
-      value: 9.66428
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4761180634368878, guid: ac51997af63624a49a4b9ee923d6a884, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1991429485140990, guid: ac51997af63624a49a4b9ee923d6a884, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ac51997af63624a49a4b9ee923d6a884, type: 2}

@@ -59,16 +59,14 @@ namespace Assets.Scripts.Objects
 
         private IEnumerator Director()
         {
-            if (onStart != null)
-                onStart.Invoke();
+            onStart?.Invoke();
 
             foreach (var point in directorPoints)
             {
                 yield return LerpObjectPositionAndRotation(point);
             }
 
-            if (onFinish != null)
-                onFinish.Invoke();
+            onFinish?.Invoke();
 
             yield return null;
         }
@@ -103,11 +101,10 @@ namespace Assets.Scripts.Objects
 
                 if (t >= 1.0f)
                 {
-                    if (onPointReached != null)
-                        onPointReached.Invoke();
+                    onPointReached?.Invoke();
 
-                    if (_data.enableCallback && _data.onReached != null)
-                        _data.onReached.Invoke();
+                    if (_data.enableCallback)
+                        _data.onReached?.Invoke();
 
                     if (_data.haltOnReach)
                     {
