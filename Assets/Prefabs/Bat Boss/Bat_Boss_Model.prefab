@@ -443,7 +443,7 @@ GameObject:
   - component: {fileID: 4296219537866732}
   - component: {fileID: 95946287183338388}
   m_Layer: 0
-  m_Name: Bat_Boss
+  m_Name: Bat_Boss_Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
