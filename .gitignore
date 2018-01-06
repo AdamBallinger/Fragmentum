@@ -4,6 +4,7 @@
 /[Bb]uild/
 /[Bb]uilds/
 /TooLargeFiles/
+/.vs/
 /Assets/AssetStoreTools*
 /Assets/Packages/SabreCSG
 /Assets/Packages/AmplifyShaderEditor
