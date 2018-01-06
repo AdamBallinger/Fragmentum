@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Assets.Scripts.Character
 {
-    public class PlayerCollisions : MonoBehaviour
+    public class PlayerCollisionsHandler : MonoBehaviour
     {
         private Player player;
 
@@ -35,7 +35,7 @@ namespace Assets.Scripts.Character
 
             //Debug.Log("Player Collisions: Colliding with Tag: " + collidingTag + "  Self is: " + gameObject.tag);
 
-            if (collidingTag.Equals("Bat Minion") && player.isDashing)
+            if (collidingTag.Equals("Bat Minion") && player.Dashing)
             {
                 var batMinionController = colliderObject.GetComponent<BatMinionController>();
 
@@ -48,7 +48,7 @@ namespace Assets.Scripts.Character
             else if (collidingTag.Equals("Bat Bomb Projectile"))
             {
                 // TODO: Should we check what part of the player is hit?
-                if (!player.isBlocking)
+                if (!player.Blocking)
                 {
                     RemovePlayerHealth();
                 }
@@ -61,13 +61,13 @@ namespace Assets.Scripts.Character
             //{
             //    CrushEnemy(colliderObject);
             //}
-            else if (collidingTag.Equals("EnemyDashCollider") && player.isDashing)
+            else if (collidingTag.Equals("EnemyDashCollider") && player.Dashing)
             {
                 // The coroutine behaviour with pushing away is far too clunky. Probably best to just use a particle system instead.
                 //StartCoroutine(DashKillEnemyCoroutine(colliderObject));
                 colliderObject.SetActive(false);
             }
-            else if(collidingTag.Equals("RootsTrigger") && player.isDashing)
+            else if(collidingTag.Equals("RootsTrigger") && player.Dashing)
             {
                 Destroy(colliderObject);
             }
@@ -100,14 +100,14 @@ namespace Assets.Scripts.Character
 
         private void PlayerReactToEnemy(GameObject colliderObject, bool isChildTrigger)
         {
-            if (player.isDashing)
+            if (player.Dashing)
             {
                 player.AddStamina(player.enemyKillStaminaIncrease);
                 SetGameObjectInactive(colliderObject, isChildTrigger);
             }
             else
             {
-                if (player.velocity.y < 0 && transform.position.y > colliderObject.transform.position.y)
+                if (player.Velocity.y < 0 && transform.position.y > colliderObject.transform.position.y)
                 {
                     CrushEnemy(colliderObject);
                 }
@@ -135,7 +135,7 @@ namespace Assets.Scripts.Character
             var direction = (playerPosition - damagingEntityPosition).normalized;
             direction.z = 0;
 
-            player.velocity = (direction * arbitraryKnockbackForce);
+            player.Velocity = (direction * arbitraryKnockbackForce);
 
             player.controlsEnabled = false;
 

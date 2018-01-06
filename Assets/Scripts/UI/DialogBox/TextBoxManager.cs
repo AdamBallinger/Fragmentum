@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Assets.Scripts.Character;
 using UnityEngine;
 using UnityEngine.Events;
@@ -64,7 +65,7 @@ namespace Assets.Scripts.UI.DialogBox
 
                 if (theText != null)
                 {
-                    textLines = (theText.text.Split('\n'));
+                    textLines = theText.text.Split('\n');
                 }
             }
             else
@@ -74,7 +75,7 @@ namespace Assets.Scripts.UI.DialogBox
 
                 if (theText != null)
                 {
-                    textLines = (theText.text.Split('\n'));
+                    textLines = theText.text.Split('\n');
                 }
             }
 
@@ -89,8 +90,7 @@ namespace Assets.Scripts.UI.DialogBox
             {
                 if (textBox.activeSelf)
                 {
-                    if (onFinish != null)
-                        onFinish.Invoke();
+                    onFinish?.Invoke();
 
                     DisableTextBox();
                 }
@@ -109,17 +109,7 @@ namespace Assets.Scripts.UI.DialogBox
             isActive = true;
             textBox.SetActive(true);
             player.controlsEnabled = false;
-            player.velocity.x = 0.0f;
-            player.velocity.z = 0.0f;
             player.Animator.SetBool("isRunning", false);
-        }
-
-        public void EnableTextBoxFreeze()
-        {
-            isActive = true;
-            textBox.SetActive(true);
-            Time.timeScale = 0.0f;
-            player.controlsEnabled = false;
         }
 
         public void DisableTextBox()
@@ -130,21 +120,11 @@ namespace Assets.Scripts.UI.DialogBox
                 player.controlsEnabled = true;
         }
 
-        public void DisableTextBoxUnfreeze()
-        {
-            textBox.SetActive(false);
-            Time.timeScale = 1.0f;
-
-            if (renableControlsOnDisable)
-                player.controlsEnabled = true;
-        }
-
         public void ReloadScript(TextAsset _theText)
         {
             if (_theText != null)
             {
-                textLines = new string[1];
-                textLines = (_theText.text.Split('\n'));
+                textLines = _theText.text.Split('\n');
             }
         }
 

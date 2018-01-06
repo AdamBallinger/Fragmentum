@@ -65,7 +65,7 @@ namespace Assets.Scripts.Misc.BatBoss
         private IEnumerator SetupFight()
         {
             playerControls.controlsEnabled = false;
-            playerControls.alwaysGrounded = true;
+            playerControls.AlwaysGrounded = true;
 
             playerControls.Animator.SetBool("isRunning", true);
             playerControls.Animator.SetFloat("animSpeedMod", 1.0f);
@@ -118,7 +118,7 @@ namespace Assets.Scripts.Misc.BatBoss
         public void OnCutsceneFinish()
         {
             playerControls.controlsEnabled = true;
-            playerControls.alwaysGrounded = false;
+            playerControls.AlwaysGrounded = false;
             bossManager.batBossObject.GetComponent<BatBossController>().StartMovement();
         }
     }

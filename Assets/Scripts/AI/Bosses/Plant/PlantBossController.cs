@@ -496,7 +496,7 @@ namespace Assets.Scripts.AI.Bosses.Plant
             if (other.gameObject.CompareTag("PlayerMain") && isActive)
             {
                 var player = other.GetComponent<Player>();
-                if (player.isDashing || player.transform.position.y > _transform.position.y && player.velocity.y < 0)
+                if (player.Dashing || player.transform.position.y > _transform.position.y && player.Velocity.y < 0)
                 {
                     if (!justTookDamage && isVulnerable)
                     {

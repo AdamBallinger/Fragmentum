@@ -11,24 +11,25 @@ namespace Assets.Scripts.Character
 
         public Animator Animator { get; private set; }
 
-        [HideInInspector]
-        public bool isDead;
-        [HideInInspector]
-        public bool alwaysGrounded = false;
-        [HideInInspector]
-        public int score = 0;
-        [HideInInspector]
-        public int currentHealth;
-        [HideInInspector]
-        public bool knockedBack = false;
-        [HideInInspector]
-        public float currentStamina;
-        [HideInInspector]
-        public Vector3 velocity;
-        [HideInInspector]
-        public bool isDashing;
-        [HideInInspector]
-        public bool isBlocking;
+        public bool Dead { get; private set; }
+
+        public bool AlwaysGrounded { get; set; }
+
+        public int Score { get; set; }
+
+        public int Health { get; private set; }
+
+        public float Stamina { get; private set; }
+
+        public bool Dashing { get; set; }
+
+        public bool Blocking { get; set; }
+
+        public Vector3 Velocity
+        {
+            get { return velocity; }
+            set { velocity = value; }
+        }
 
         public bool controlsEnabled = true;
         public bool invertMovement = false;
@@ -64,6 +65,7 @@ namespace Assets.Scripts.Character
         public AudioClip dashSound;
         public AudioClip playerHitSound;
 
+        private Vector3 velocity;
         private Vector3 dashMotion;
 
         // Timers
@@ -86,11 +88,11 @@ namespace Assets.Scripts.Character
         {
             _transform = transform;
 
-            currentHealth = maxHealth;
-            currentStamina = maxStamina;
+            Health = maxHealth;
+            Stamina = maxStamina;
 
             isDoubleJumping = false;
-            isDashing = false;
+            Dashing = false;
 
             dashMotion = Vector3.zero;
             velocity = Vector3.zero;
@@ -122,13 +124,13 @@ namespace Assets.Scripts.Character
 #endif
             var horizontalInput = 0.0f;
 
-            if (controlsEnabled && !isDead)
+            if (controlsEnabled && !Dead)
             {
                 horizontalInput = Input.GetAxis("Horizontal");
                 Animator.SetFloat("animSpeedMod", Mathf.Abs(horizontalInput));
-                Animator.SetBool("isRunning", (velocity.x != 0.0f || velocity.z != 0.0f) && !isDashing);
+                Animator.SetBool("isRunning", (velocity.x != 0.0f || velocity.z != 0.0f) && !Dashing);
                 Animator.SetBool("isGrounded", Grounded());
-                Animator.SetBool("isDashing", isDashing);
+                Animator.SetBool("isDashing", Dashing);
 
                 if (horizontalInput != 0.0f)
                 {
@@ -138,10 +140,10 @@ namespace Assets.Scripts.Character
                     _transform.rotation = Quaternion.Euler(0.0f, 90.0f * rawHorizontal, 0.0f);
                 }
 
-                isBlocking = Input.GetAxisRaw("Block") == 1.0f;
-                Animator.SetBool("isBlocking", isBlocking);
+                Blocking = Input.GetAxisRaw("Block") == 1.0f;
+                Animator.SetBool("isBlocking", Blocking);
 
-                blockingCollider.SetActive(isBlocking);
+                blockingCollider.SetActive(Blocking);
 
                 // Update "IFrames'
                 UpdateDamageRecovery();
@@ -162,8 +164,8 @@ namespace Assets.Scripts.Character
 
         public void Die()
         {
-            isDead = true;
-            currentHealth = 0;
+            Dead = true;
+            Health = 0;
             velocity.x = 0.0f;
             velocity.z = 0.0f;
             Animator.SetBool("isDead", true);
@@ -171,17 +173,17 @@ namespace Assets.Scripts.Character
 
         public void Respawn()
         {
-            isDead = false;
-            currentHealth = maxHealth;
+            Dead = false;
+            Health = maxHealth;
             controlsEnabled = true;
             Animator.SetBool("isDead", false);
         }
 
         public bool Grounded()
         {
-            if (alwaysGrounded) return true;
+            if (AlwaysGrounded) return true;
 
-            return !isDead && Controller.isGrounded;
+            return !Dead && Controller.isGrounded;
         }
 
         public void BounceOffEnemyHead()
@@ -205,7 +207,7 @@ namespace Assets.Scripts.Character
 
         private void UpdateStamina()
         {
-            if (currentStamina < maxStamina)
+            if (Stamina < maxStamina)
             {
                 staminaTickCounter += Time.deltaTime * 1000;
                 if (staminaTickCounter > staminaTickTime)
@@ -218,13 +220,13 @@ namespace Assets.Scripts.Character
 
         private void UpdatePosition(float _horizontalInput)
         {
-            if (isDashing)
+            if (Dashing)
             {
                 velocity = dashMotion * Time.deltaTime;
                 dashTimer += Time.deltaTime * 1000;
                 if (dashTimer > dashLength)
                 {
-                    isDashing = false;
+                    Dashing = false;
                     dashTimer = 0.0f;
                 }
             }
@@ -234,7 +236,7 @@ namespace Assets.Scripts.Character
 
                 if (controlsEnabled && _horizontalInput != 0.0f)
                 {
-                    var velocityChange = (isBlocking ? moveSpeed / 2.0f : moveSpeed * Mathf.Abs(_horizontalInput)) * Time.deltaTime;
+                    var velocityChange = (Blocking ? moveSpeed / 2.0f : moveSpeed * Mathf.Abs(_horizontalInput)) * Time.deltaTime;
                     velocity = _transform.forward * velocityChange;
                 }
                 else
@@ -250,7 +252,7 @@ namespace Assets.Scripts.Character
 
         private void ApplyGravity()
         {
-            if (!isDashing && !Controller.isGrounded)
+            if (!Dashing && !Controller.isGrounded)
             {
                 velocity.y += gravity * Time.deltaTime;
             }
@@ -263,15 +265,15 @@ namespace Assets.Scripts.Character
 
         private void Dash()
         {
-            if (Input.GetAxis("Dash") != 0.0f && !isDashing && !dashPressed)
+            if (Input.GetAxis("Dash") != 0.0f && !Dashing && !dashPressed)
             {
                 dashPressed = true;
 
-                if (currentStamina >= dashStaminaReduction)
+                if (Stamina >= dashStaminaReduction)
                 {
-                    isDashing = true;
+                    Dashing = true;
                     dashMotion = _transform.forward * dashSpeed;
-                    currentStamina -= dashStaminaReduction;
+                    Stamina -= dashStaminaReduction;
                     GetComponent<AudioSource>().clip = dashSound;
                     GetComponent<AudioSource>().Play();
                 }
@@ -375,41 +377,41 @@ namespace Assets.Scripts.Character
         // Stamina
         public void AddStamina(float _stamina)
         {
-            if (currentStamina < maxStamina)
-                currentStamina += _stamina;
+            if (Stamina < maxStamina)
+                Stamina += _stamina;
 
-            if (currentStamina > maxStamina)
-                currentStamina = maxStamina;
+            if (Stamina > maxStamina)
+                Stamina = maxStamina;
         }
 
         public void RemoveStamina(float _stamina)
         {
-            if (currentStamina > 0)
-                currentStamina -= _stamina;
+            if (Stamina > 0)
+                Stamina -= _stamina;
 
-            if (currentStamina < 0)
-                currentStamina = 0;
+            if (Stamina < 0)
+                Stamina = 0;
         }
 
         // Health
         public void AddHealth(int _health)
         {
-            if (currentHealth < maxHealth)
-                currentHealth += _health;
+            if (Health < maxHealth)
+                Health += _health;
 
-            if (currentHealth > maxHealth)
-                currentHealth = maxHealth;
+            if (Health > maxHealth)
+                Health = maxHealth;
         }
 
         public void RemoveHealth(int _health)
         {
-            if (isDead || _health <= 0) return;
+            if (Dead || _health <= 0) return;
 
             if(!recoveringFromDamage)
             {
-                currentHealth -= _health;
+                Health -= _health;
 
-                if(currentHealth > 0)
+                if(Health > 0)
                 {
                     recoveringFromDamage = true;
                     Animator.SetBool("takingDamage", true);
@@ -419,7 +421,7 @@ namespace Assets.Scripts.Character
                 }
             }
 
-            if(currentHealth <= 0)
+            if(Health <= 0)
             {
                 Die();
             }

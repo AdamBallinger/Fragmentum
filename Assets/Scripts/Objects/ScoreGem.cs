@@ -47,7 +47,7 @@ namespace Assets.Scripts.Objects
             if (other.CompareTag("PlayerMain") && !collected)
             {
                 var player = other.gameObject.GetComponent<Player>();
-                player.score += score;
+                player.Score += score;
 
                 //Debug.Log(player.score);
                 collected = true;

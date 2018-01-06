@@ -30,7 +30,7 @@ namespace Assets.Scripts.AI.Enemy.EnemyCollisions
 
         public void OnPlayerBodyCollision(Player _player)
         {
-            if(_player.isDashing)
+            if(_player.Dashing)
             {
                 var sp = Instantiate(soundPos, enemyPos, Quaternion.identity);
                 var psas = sp.GetComponent<AudioSource>();

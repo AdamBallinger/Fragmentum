@@ -51,7 +51,7 @@ namespace Assets.Scripts.Misc.PlantBoss
         private IEnumerator SetupFight()
         {
             playerControls.controlsEnabled = false;
-            playerControls.alwaysGrounded = true;
+            playerControls.AlwaysGrounded = true;
 
             playerControls.Animator.SetBool("isRunning", true);
             playerControls.Animator.SetFloat("animSpeedMod", 1.0f);
@@ -98,7 +98,7 @@ namespace Assets.Scripts.Misc.PlantBoss
         public void OnCutsceneFinish()
         {
             playerControls.controlsEnabled = true;
-            playerControls.alwaysGrounded = false;
+            playerControls.AlwaysGrounded = false;
             bossManager.plantBossObject.GetComponent<PlantBossController>().StartMovement();
         }
     }

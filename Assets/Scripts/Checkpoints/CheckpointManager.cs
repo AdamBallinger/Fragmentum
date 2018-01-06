@@ -39,7 +39,7 @@ namespace Assets.Scripts.Checkpoints
 
         private void Update()
         {
-            if (player.isDead)
+            if (player.Dead)
             {
                 if (respawnTimer == 0.0f)
                 {

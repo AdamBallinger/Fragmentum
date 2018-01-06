@@ -19,7 +19,7 @@ namespace Assets.Scripts.Objects
 
         private void OnTriggerEnter()
         {
-            if (player.isDashing)
+            if (player.Dashing)
             {
                 if (destroyParticleSystemPrefab != null)
                 {

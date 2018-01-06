@@ -440,7 +440,7 @@ namespace Assets.Scripts.AI.Bosses.Bat
             {
                 var player = _collider.gameObject.GetComponent<Player>();
 
-                if (player.isDashing)
+                if (player.Dashing)
                 {
                     currentHealth--;
                     if (currentHealth <= 0)

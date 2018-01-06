@@ -34,15 +34,15 @@ namespace Assets.Scripts.UI.PlayerHUD
                 return;
             }
 
-            healthBar.fillAmount = Mathf.MoveTowards(healthBar.fillAmount, 1.0f / player.maxHealth * player.currentHealth, 1.0f * Time.deltaTime);
-            staminaBar.fillAmount = Mathf.MoveTowards(staminaBar.fillAmount, 1.0f / player.maxStamina * player.currentStamina, 1.0f * Time.deltaTime);
+            healthBar.fillAmount = Mathf.MoveTowards(healthBar.fillAmount, 1.0f / player.maxHealth * player.Health, 1.0f * Time.deltaTime);
+            staminaBar.fillAmount = Mathf.MoveTowards(staminaBar.fillAmount, 1.0f / player.maxStamina * player.Stamina, 1.0f * Time.deltaTime);
 
             UpdateScoreText();
         }
 
         private void UpdateScoreText()
         {
-            playerScore.text = "Score: " + player.score;
+            playerScore.text = "Score: " + player.Score;
         }
 
         private void HUDCheck()

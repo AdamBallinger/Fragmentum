@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace Assets.Scripts.UI.MainMenu
@@ -22,7 +23,8 @@ namespace Assets.Scripts.UI.MainMenu
 
             if (uiController == null)
             {
-                Debug.LogWarning("No Global UI Controller present in scene. Make sure to run from bootstrap!");
+                //Debug.LogWarning("No Global UI Controller present in scene. Make sure to run from bootstrap!");
+                SceneManager.LoadScene("bootstrap");
             }
         }
 
